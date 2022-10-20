@@ -24,7 +24,7 @@ def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
-@Client.on_message(filters.command(['song']) & ~filters.channel)
+@Client.on_message(filters.command(["song"]) & ~filters.channel)
 def song(client, message):
 
     user_id = message.from_user.id 
@@ -94,9 +94,10 @@ def get_text(message: Message) -> [None,str]:
         return None
 
 
-@Client.on_message(filters.command(["video", "mp4"]))
+@Client.on_message(filters.command(["video"]))
 async def vsong(client, message: Message):
     urlissed = get_text(message)
+    reply_id = message.reply_to_message.id if message.reply_to_message else message.id
 
     pablo = await client.send_message(
         message.chat.id, f"**𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾** `{urlissed}`"
