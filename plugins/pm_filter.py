@@ -767,21 +767,20 @@ async def auto_filter(client, msg, spoll=False):
     if photo and photo.get('photo'):
         try:
            hehe = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1200)
-            await hehe.delete()
-            await message.delete()
+           await asyncio.sleep(1200)
+           await hehe.delete()
+           await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-            pic = photo.get('photo')
-            photo = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1200)
-            await hmm.delete()
-            await message.delete() 
+           pic = photo.get('photo')
+           photo = pic.replace('.jpg', "._V1_UX360.jpg")
+           hmm = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+           await asyncio.sleep(1200)
+           await hmm.delete()
         except Exception as e:
-            logger.exception(e)
-            fek = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1200)
-            await fek.delete()
+           logger.exception(e)
+           fek = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+           await asyncio.sleep(1200)
+           await fek.delete()
     else:
         fuk = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(1200)
