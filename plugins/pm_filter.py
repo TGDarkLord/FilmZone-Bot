@@ -772,14 +772,14 @@ async def auto_filter(client, msg, spoll=False):
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-           hmm = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-           await asyncio.sleep(1200)
-           await hmm.delete()
+            hmm = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(1200)
+            await hmm.delete()
         except Exception as e:
-           logger.exception(e)
-           fek = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-           await asyncio.sleep(1200)
-           await fek.delete()
+            logger.exception(e)
+            fek = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(1200)
+            await fek.delete()
     else:
         fuk = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(1200)
