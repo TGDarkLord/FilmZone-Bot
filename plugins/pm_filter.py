@@ -764,15 +764,14 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"<b>↪️ Requested:</b> {search}\n<b>👥 Requested by:</b> {message.from_user.mention}\n<b>🗂️ Total File:</b> 0\n<b>📃 Total Page:</b> 0\n<b>📤 Uploaded To:</b> Film Zone Server\n<b>🧑‍🔧 Get Support</b> ✔️ <a href='https://t.me/hellodarklord'>DarkLord</a>\n\n📌 Press The Down Buttons To Access The File.\n<s>📌 This Post Will Be Deleted After 10 Minutes.</s>"
-    if photo and photo.get('photo'):
+    if imdb and imdb.get('poster'):
         try:
-           hehe = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-           await asyncio.sleep(1200)
-           await hehe.delete()
-           await message.delete()
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(1200)
+            await hehe.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-           pic = photo.get('photo')
-           photo = pic.replace('.jpg', "._V1_UX360.jpg")
+            pic = imdb.get('poster')
+            poster = pic.replace('.jpg', "._V1_UX360.jpg")
            hmm = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
            await asyncio.sleep(1200)
            await hmm.delete()
