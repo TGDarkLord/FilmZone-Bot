@@ -7,10 +7,12 @@ umongo
 requests
 bs4
 imdbpy==2021.4.18
-youtube-search-python==1.4.6
+youtube-search-python
 youtube_search
 youtube-dl
 yt-dlp
+ytthumb
+search_engine_parser
 requests
 aiofiles
 aiohttp
