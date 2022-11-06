@@ -142,7 +142,7 @@ async def next_page(bot, query):
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
-    if query.data == "close_data":
+    if query.data == "close":
         await query.message.delete()
     elif query.data == "delallconfirm":
         userid = query.from_user.id
