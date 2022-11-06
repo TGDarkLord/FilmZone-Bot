@@ -109,7 +109,7 @@ async def next_page(bot, query):
         )    
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("🗑️", callback_data="close_data"),
+             InlineKeyboardButton("🗑️", callback_data="close"),
              InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
         )
         btn.append(
@@ -459,7 +459,7 @@ Phonepe 📲 Soon...
             ],[
             InlineKeyboardButton(text='😎 About', callback_data='crpf'),
             InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('❎ Close', callback_data='close_data'),
+            InlineKeyboardButton('❎ Close', callback_data='close'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -703,7 +703,7 @@ async def auto_filter(client, msg, spoll=False):
         )    
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton("🗑️", callback_data="close_data"),
+             InlineKeyboardButton("🗑️", callback_data="close"),
              InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
         )
         btn.append(
@@ -715,7 +715,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages"),
-             InlineKeyboardButton("🗑️", callback_data="close_data"),
+             InlineKeyboardButton("🗑️", callback_data="close"),
              InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
         )
         btn.append(
