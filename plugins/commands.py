@@ -25,7 +25,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton("🔗 Film Zone", url=f"https://t.me/+bTrA63X_d2I3MDVl")
+            InlineKeyboardButton("🔗 Movie Time", url=f"https://t.me/+_eNFsILCRAA0Njll")
             ],[
             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
             InlineKeyboardButton(text="😎 About", callback_data="crpf") 
@@ -54,7 +54,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🔔 Join Updates Channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -68,14 +68,14 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Please Join My Updates Channel To Use This Bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton("🔗 Film Zone", url=f"https://t.me/+bTrA63X_d2I3MDVl")
+            InlineKeyboardButton("🔗 Movie Time", url=f"https://t.me/+_eNFsILCRAA0Njll")
             ],[
             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
             InlineKeyboardButton(text="😎 About", callback_data="crpf") 
@@ -231,10 +231,20 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
+    buttons = [
+        [
+            InlineKeyboardButton('⭕️ Support', url='https://t.me/JOSPSupport'),
+            InlineKeyboardButton('Channel ⭕️', url='https://t.me/josprojects/221')
+        ],
+        [
+            InlineKeyboardButton('🎬 Series & Movie Club 🎬', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+        ]
+        ]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup(buttons),
         protect_content=True if pre == 'filep' else False,
         )
                     
