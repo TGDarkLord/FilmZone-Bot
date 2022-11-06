@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/+Je30Ku61FKBkYTY1')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -49,7 +49,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                    InlineKeyboardButton('🔔 Join Updates Channel', url="https://t.me/+dB60Z_TJ2JswZGY9")
+                    InlineKeyboardButton('🔔 Join Updates Channel', url="https://t.me/+Je30Ku61FKBkYTY1")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -57,7 +57,7 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
-                text=f'<b>Hello 👋 {u.mention},</b>\n\nWelcome To <b>{message.chat.title} 💐</b>\n\nMy Name Is <b><a href="https://t.me/FilmZone_Robot">FILM ZONE BOT</a></b>,<b> I Can Provide Movies/Series In This Group.Just Type The Actual Name Of The Movie/Series.You Will Get The Movie/Series If You Write Correct Spelling.If You Do not Get The Movie/Series It Is Sure That You Have Written Incorrect Spelling Or Your Requested Movie/Series Does Not Exit In My Database 😐.</b>',
+                text=f'<b>Hello 👋 {u.mention},</b>\n\nWelcome To <b>{message.chat.title} 💐</b>\n\nMy Name Is <b><a href="https://t.me/MovieTimeMovie_Bot">MOVIE TIME BOT</a></b>,<b> I Can Provide Movies/Series In This Group.Just Type The Actual Name Of The Movie/Series.You Will Get The Movie/Series If You Write Correct Spelling.If You Do not Get The Movie/Series It Is Sure That You Have Written Incorrect Spelling Or Your Requested Movie/Series Does Not Exit In My Database 😐.</b>',
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
     
