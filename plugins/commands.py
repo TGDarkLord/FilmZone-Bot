@@ -231,15 +231,14 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
-    buttons = [
-        [
-            InlineKeyboardButton('⭕️ Support', url='https://t.me/JOSPSupport'),
-            InlineKeyboardButton('Channel ⭕️', url='https://t.me/josprojects/221')
-        ],
-        [
-            InlineKeyboardButton('🎬 Series & Movie Club 🎬', url=f'https://t.me/+y53tWFUw6Q43NzE9')
-        ]
-        ]
+    buttons = [[
+             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobikashmaity'),
+             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobikashmaity')
+             ],[
+             InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
+             ],[
+             InlineKeyboardButton('🗑 Close File', callback_data='close')
+             ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
