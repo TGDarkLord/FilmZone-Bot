@@ -9,7 +9,7 @@ For More Information Click ℹ️ Help</b></i>"""
     
     HELP_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<i><b>I can Guide You Through All Of <a href="https://t.me/MovieTimeMovie">Movie Time Bot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</i></b>"""
+<i><b>I can Guide You Through All Of <a href="https://t.me/MovieTimeMovie_Bot">Movie Time Bot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</i></b>"""
 
     ALIVE_TXT = """<b>Module :-</b> Alive
 
@@ -78,9 +78,9 @@ I Can't Write Everything In My Bio So I Created This...</i>
 ╰──────⍟───────╯
 
 ╭──[─═ ᴏᴡɴᴇʀ ᴀᴛ ═─]
-├• <a href="https://t.me/+bTrA63X_d2I3MDVl">FILM ZONE</a>
-├• <a href="https://t.me/+dB60Z_TJ2JswZGY9">FILM ZONE UPDATES</a>
-├• <a href="https://t.me/FilmZone_Robot">FILM ZONE BOT</a>
+├• <a href="https://t.me/+_eNFsILCRAA0Njll">MOVIE TIME</a>
+├• <a href="https://t.me/+Je30Ku61FKBkYTY1">MOVIE TIME UPDATES</a>
+├• <a href="https://t.me/MovieTimeMovie_Bot">MOVIE TIME BOT</a>
 ╰──────⍟───────╯
 
 <i>Thank You For Reading Patiently 🙏</i></b>"""
