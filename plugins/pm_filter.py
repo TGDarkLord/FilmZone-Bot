@@ -36,7 +36,7 @@ async def alive(client, message):
 
 @Client.on_message(filters.command("link"))
 async def link(client, message):
-    await message.reply_text("♨️♨️ Are You Movie Lover ? ♨️\n\n🎬 Then You Are Welcomed To My Group For A Daily Breeze Of Movies\n༺━━━━━━━ ✧ ━━━━━━━༻\n\n📌 Old & New Movies/Series\n\n📌 Proper HD, DVD-Rip & Tv-Rip\n\n📌 Available In Various Size\n\n📌 Bengali | Hindi | English & More\n\n༺━━━━━━━ ✧ ━━━━━━━༻\n\n✔️ Group - https://telegram.me/joinchat/bTrA63X_d2I3MDVl\n\n👆Click Link For Join Group")
+    await message.reply_text("♨️♨️ Are You Movie Lover ? ♨️\n\n🎬 Then You Are Welcomed To My Group For A Daily Breeze Of Movies\n༺━━━━━━━ ✧ ━━━━━━━༻\n\n📌 Old & New Movies/Series\n\n📌 Proper HD, DVD-Rip & Tv-Rip\n\n📌 Available In Various Size\n\n📌 Bengali | Hindi | English & More\n\n༺━━━━━━━ ✧ ━━━━━━━༻\n\n✔️ Group - https://telegram.me/joinchat/_eNFsILCRAA0Njll\n\n👆Click Link For Join Group")
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
@@ -126,7 +126,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
             )
     btn.insert(0, [
-        InlineKeyboardButton(text="ミ★ FILM ZONE ★彡", callback_data="rsrq"),
+        InlineKeyboardButton(text="ミ★ MOVIE TIME ★彡", callback_data="rsrq"),
     ])
     btn.insert(0, [
         InlineKeyboardButton(text="📂 Get All Files 📂", callback_data=f'get'),
@@ -350,8 +350,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodarklord'),
-             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodarklord')
+             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobikashmaity'),
+             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobikashmaity')
              ],[
              InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
              ],[
@@ -401,8 +401,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodarklord'),
-            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodarklord')
+            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobikashmaity'),
+            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobikashmaity')
             ],[
             InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
             ],[
@@ -432,7 +432,7 @@ Phonepe 📲 Soon...
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton("🔗 Film Zone", url=f"https://t.me/+bTrA63X_d2I3MDVl")
+            InlineKeyboardButton("🔗 Movie Time", url=f"https://t.me/+_eNFsILCRAA0Njll")
             ],[
             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
             InlineKeyboardButton(text="😎 About", callback_data="crpf") 
@@ -478,9 +478,9 @@ Phonepe 📲 Soon...
         )
     elif "crpf" in query.data:
             return await query.answer("""
-꧁֍FILM ZONE BOT֍꧂
+꧁֍MOVIE TIME BOT֍꧂
 
-🤴 Creator: DarkLord
+🤴 Creator: Bikash
 ❖ Language: Python3
 ❖ Hosted: Heroku 
 ❖ Version: 2.0.1 [BETA]
@@ -491,14 +491,14 @@ Phonepe 📲 Soon...
        
     elif "rsrq" in query.data:
         return await query.answer("""
-ミ★ FILM ZONE ★彡
+ミ★ MOVIE TIME ★彡
 
 ☞ Sᴛᴏʀᴀɢᴇ Oғ Nᴇᴡ & Oʟᴅ Mᴏᴠɪᴇs/Sᴇʀɪᴇs
 ☞ Aᴠᴀɪʟᴀʙʟᴇ Iɴ Mᴀɴʏ Sɪᴢᴇs & Lᴀɴɢᴜᴀɢᴇs
 ☞ Rᴇᴄᴇɪᴠᴀʙʟᴇ Iɴ Vᴀʀɪᴏᴜs Qᴜᴀʟɪᴛʏ
 
 👑
-ＤａｒｋＬｏｒｄ
+ᗷIKᗩՏᕼ
 """, show_alert=True)
 
     elif query.data == "info":
@@ -624,7 +624,7 @@ Phonepe 📲 Soon...
     elif query.data == "donate":
         buttons = [[
             InlineKeyboardButton('💳 GooglePay', callback_data='gp'),
-            InlineKeyboardButton('💿 Paytm', callback_data='pt'),
+            InlineKeyboardButton('📲 Paytm', callback_data='pt'),
             ],[
             InlineKeyboardButton('💰 PhonePe', callback_data='pp'),
             InlineKeyboardButton('💲 PayPal', callback_data='pa'),
@@ -725,7 +725,7 @@ async def auto_filter(client, msg, spoll=False):
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
         )
     btn.insert(0, [
-        InlineKeyboardButton(text="ミ★ FILM ZONE ★彡", callback_data="rsrq"),
+        InlineKeyboardButton(text="ミ★ MOVIE TIME ★彡", callback_data="rsrq"),
     ]) 
     reply_id = message.reply_to_message.id if message.reply_to_message else message.id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
@@ -763,7 +763,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>↪️ Requested:</b> {search}\n<b>👥 Requested by:</b> {message.from_user.mention}\n<b>🗂️ Total File:</b> 0\n<b>📃 Total Page:</b> 0\n<b>📤 Uploaded To:</b> Film Zone Server\n<b>🧑‍🔧 Get Support</b> ✔️ <a href='https://t.me/hellodarklord'>DarkLord</a>\n\n📌 Press The Down Buttons To Access The File.\n<s>📌 This Post Will Be Deleted After 10 Minutes.</s>"
+        cap = f"<b>↪️ Requested:</b> {search}\n<b>👥 Requested by:</b> {message.from_user.mention}\n<b>🗂️ Total File:</b> 0\n<b>📃 Total Page:</b> 0\n<b>📤 Uploaded To:</b> Movie Time Server\n<b>🧑‍🔧 Get Support</b> ✔️ <a href='https://t.me/hellobikashmaity'>Bikash</a>\n\n📌 Press The Down Buttons To Access The File.\n<s>📌 This Post Will Be Deleted After 10 Minutes.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
@@ -772,16 +772,16 @@ async def auto_filter(client, msg, spoll=False):
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            hmm = await message.reply_photo(photo="https://telegra.ph/file/8cca99f76f250a39742f8.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(1200)
             await hmm.delete()
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo="https://telegra.ph/file/8cca99f76f250a39742f8.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(1200)
             await fek.delete()
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/d8833ba422c1f6ada9ce2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/8cca99f76f250a39742f8.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(1200)
         await fuk.delete()
 
