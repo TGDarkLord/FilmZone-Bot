@@ -350,8 +350,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobikashmaity'),
-             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobikashmaity')
+             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobrokenheart'),
+             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobrokenheart')
              ],[
              InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
              ],[
@@ -401,8 +401,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobikashmaity'),
-            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobikashmaity')
+            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobrokenheart'),
+            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobrokenheart')
             ],[
             InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
             ],[
@@ -480,7 +480,7 @@ Phonepe 📲 Soon...
             return await query.answer("""
 ꧁֍MOVIE TIME BOT֍꧂
 
-🤴 Creator: Bikash
+㋡ Creator: BrokenHeart 
 ❖ Language: Python3
 ❖ Hosted: Heroku 
 ❖ Version: 2.0.1 [BETA]
@@ -498,7 +498,7 @@ Phonepe 📲 Soon...
 ☞ Rᴇᴄᴇɪᴠᴀʙʟᴇ Iɴ Vᴀʀɪᴏᴜs Qᴜᴀʟɪᴛʏ
 
 👑
-ᗷIKᗩՏᕼ
+ＢｒｏｋｅｎＨｅａｒｔ
 """, show_alert=True)
 
     elif query.data == "info":
@@ -763,7 +763,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>↪️ Requested:</b> {search}\n<b>👥 Requested by:</b> {message.from_user.mention}\n<b>🗂️ Total File:</b> 0\n<b>📃 Total Page:</b> 0\n<b>📤 Uploaded To:</b> Movie Time Server\n<b>🧑‍🔧 Get Support</b> ✔️ <a href='https://t.me/hellobikashmaity'>Bikash</a>\n\n📌 Press The Down Buttons To Access The File.\n<s>📌 This Post Will Be Deleted After 10 Minutes.</s>"
+        cap = f"<b>↪️ Requested:</b> {search}\n<b>👥 Requested by:</b> {message.from_user.mention}\n<b>🗂️ Total File:</b> 0\n<b>📃 Total Page:</b> 0\n<b>📤 Uploaded To:</b> Movie Time Server\n<b>🧑‍🔧 Get Support</b> ✔️ <a href='https://t.me/hellobrokenheart'>BrokenHeart</a>\n\n📌 Press The Down Buttons To Access The File.\n<s>📌 This Post Will Be Deleted After 10 Minutes.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
