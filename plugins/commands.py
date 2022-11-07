@@ -232,8 +232,8 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
     buttons = [[
-             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobikashmaity'),
-             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobikashmaity')
+             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellobrokenheart'),
+             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellobrokenheart')
              ],[
              InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
              ],[
