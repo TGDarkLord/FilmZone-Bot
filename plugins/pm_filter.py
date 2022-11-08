@@ -462,6 +462,7 @@ Phonepe 📲 Soon...
             InlineKeyboardButton('❎ Close', callback_data='close'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="▣ ▢ ▢"
         )
@@ -480,7 +481,7 @@ Phonepe 📲 Soon...
             return await query.answer("""
 ꧁֍MOVIE TIME BOT֍꧂
 
-㋡ Creator: BrokenHeart 
+㋡ Creator: Heart 
 ❖ Language: Python3
 ❖ Hosted: Heroku 
 ❖ Version: 2.0.1 [BETA]
@@ -506,6 +507,7 @@ Phonepe 📲 Soon...
             InlineKeyboardButton('🔙 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="▣ ▢ ▢"
         )
@@ -526,6 +528,7 @@ Phonepe 📲 Soon...
             InlineKeyboardButton('🔙 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="▣ ▢ ▢"
         )
